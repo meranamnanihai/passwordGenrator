@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Alert from './components/alert';
+import githubicon from './assets/github-icon.png';
+
 
 function App() {
   const [charsInPass, setCharsInPass] = useState(false);
@@ -90,6 +92,17 @@ function App() {
           Copy Password
         </button>
       </div>
+          <div className="wrapper flex justify-center">
+      <footer className="bg-gray-900 text-white py-6 absolute bottom-0 w-[90%] ">
+      <div className="container mx-auto flex items-center justify-center px-4">
+        <div className="text-center flex gap-2">
+          <span className="inline-block relative animate-bounce text-2xl cursor-pointer">
+            <span className="text-white flex justify-center items-center gap-4">Made by Admya Salar <img className='invert' src={githubicon} alt="" srcset="" /></span>
+          </span>
+        </div>
+      </div>
+    </footer>
+    </div>
     </div>
   );
 }
